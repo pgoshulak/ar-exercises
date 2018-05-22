@@ -31,7 +31,7 @@ puts "----------"
 @store2.employees.create(
   first_name: "Clark",
   last_name: "Kent",
-  hourly_rate: 30
+  hourly_rate: 40
 )
 @store2.employees.create(
   first_name: "Tony",
