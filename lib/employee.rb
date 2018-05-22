@@ -10,8 +10,8 @@ class Employee < ActiveRecord::Base
   validates_presence_of :store_id,
     only_integer: true
   
-  # before_create :assign_password_before_create
-  after_create :assign_password_after_create
+  before_create :assign_password_before_create
+  # after_create :assign_password_after_create
 
   private
 

@@ -9,5 +9,3 @@ require_relative './exercise_7'
 
 puts "Exercise 8"
 puts "----------"
-
-binding.pry
