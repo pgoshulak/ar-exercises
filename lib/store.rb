@@ -8,7 +8,7 @@ class Store < ActiveRecord::Base
   validate :must_carry_mens_or_womens_apparel
   
   def must_carry_mens_or_womens_apparel
-    if !(mens_apparel == true || womens_apparel == true)
+    unless (mens_apparel == true || womens_apparel == true)
       errors.add(:base, "Store must carry at least one of men's or women's")
     end
   end
